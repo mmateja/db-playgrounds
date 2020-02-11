@@ -4,4 +4,8 @@ services:
     image: 'mysql'
     environment:
       - MYSQL_ALLOW_EMPTY_PASSWORD=true
+  phpmyadmin:
+    image: 'phpmyadmin/phpmyadmin'
+    ports:
+      - '8080:80'
 
